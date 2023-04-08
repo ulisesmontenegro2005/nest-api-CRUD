@@ -1,3 +1,17 @@
+ROUTES
+
+GET --- '/' response: "Hello World"
+
+GET --- '/products' response: [Products Array]
+
+GET --- '/products/:id' response: {product} query-params: id
+
+POST --- '/products' response: {new-product} body-params: {name, price, thumbnail} 
+
+PUT --- '/products' response: {new-product} body-params: {id, name, price, thumbnail} 
+
+DELETE --- '/products/:id' response: {deleted-product} query-params: id
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
